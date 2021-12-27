@@ -28,13 +28,17 @@
 // @import "./componets/header"
 
 // сайт ниже
-
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #150c01;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 .container {
@@ -42,6 +46,14 @@ body {
   max-width: 1140px;
   padding: 0px 15px;
   margin: 0 auto;
+}
+
+.btn {
+  line-height: 19px;
+  color: #ffffff;
+  padding: 13px 30px;
+  background: #dc780b;
+  border-radius: 5px;
 }
 
 // HEADER ..........................
@@ -81,7 +93,8 @@ body {
       }
     }
     &-right {
-      .header__btn {
+      .header__btn,
+      .btn {
         line-height: 19px;
         color: #ffffff;
         padding: 13px 30px;
@@ -91,6 +104,68 @@ body {
     }
   }
 }
+
+
+// MAIN...................
+.description {
+  .description__iner {
+    display: flex;
+    justify-content: space-between;
+    .description__iner-left {
+      padding-top: 160px;
+      width: 555px;
+      .description-title {
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48.83px;
+        line-height: 58px;
+        color: #150C01;
+        margin: 0;
+        margin-bottom: 42px;
+      }
+      .description-subtitle {
+        line-height: 24px;
+        color: #150C01;
+        opacity: 0.7;
+        margin:  0;
+        margin-bottom: 50px;
+      }
+      .description-box__btn {
+        display: flex;
+        .description__btn-left {
+          padding: 21px 41px;
+          margin-right: 10px;
+        }
+        .description__btn-right {
+          padding: 21px 40px;
+          background: #fff;
+          // opacity: 0.1;
+          border: 1.5px solid rgba(220, 120, 11, .2);
+          border-radius: 5px;
+          color: #DC780B;
+
+        }
+
+
+      }
+    }
+    .description__iner-right {
+      .description__img {
+        display: block;
+        // max-width: 100%;
+      }
+
+    }
+
+  }
+}
+
+
+
+
+
+
 
 //  FOOTER .........................
 .footer {
@@ -121,6 +196,7 @@ body {
     display: flex;
     justify-content: space-between;
     .footer__contacts {
+      width: 262px;
       display: flex;
       flex-direction: column;
       .footer__logo {
@@ -131,6 +207,7 @@ body {
       }
     }
     .footer-menu {
+      width: 262px;
       .footer-menu__list {
         padding: 0;
         margin: 0;
@@ -139,6 +216,7 @@ body {
           margin-bottom: 20px;
         }
         .footer__social {
+          padding-top: 5px;
           display: flex;
           // align-items: center;
           .footer__social-item {
@@ -188,3 +266,5 @@ body {
     }
   }
 }
+
+
