@@ -1,34 +1,109 @@
-$primarycolor: #dc780b;
-html {
-  color: $primarycolor;
+// $primarycolor: #dc780b;
+// html {
+//   color: $primarycolor;
+// }
+
+// .item {
+//    p {
+//       color: orange;
+//    }
+//    a {
+//       color: orange;
+//       font-size: 44px;
+//       font-weight: 800;
+//    }
+// }
+
+// .item {
+//    color: red;
+//    &__img {
+//       width: 100px;
+//       height: 100px;
+//    }
+//    &__title {
+//       font-size: 33px;
+//       font-weight: normal;
+//    }
+// }
+
+// @mixin theme() {
+//    background: #000;
+//    color: black;
+// }
+
+// .title {
+//    @include theme;
+//    margin-top: 20px;
+// }
+
+// @import "./componets/header"
+
+
+
+// сайт ниже
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   color:#150C01;
+   background-color:#E5E5E5;
 }
 
-.item {
-   p {}
-   a {}
+.container {
+   width: 100%;
+   max-width: 1140px;
+   padding: 0px 15px;
+   margin: 0 auto;
 }
 
-.item {
-   color: red;
-   &__img {
-      width: 100px;
-      height: 100px;
+.header {
+   padding-top: 30px;
+
+   &__iner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-left {
+         display: flex;
+         align-items: center;
+
+         .header__logo {
+            margin-right: 35px;
+         }
+
+         .menu-list {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            .menu-item {
+               margin-right: 41px;
+
+               .menu-link {
+                  text-decoration: none;
+                  line-height: 19px;
+                  color: #150C01;
+                  opacity: 0.6;
+               }
+            }
+         }
+      }
+      &-right {
+         .header__btn {
+            line-height: 19px;
+            color: #FFFFFF;
+            padding: 13px 30px;
+            background: #DC780B;
+            border-radius: 5px;
+         }
+      }
    }
-   &__title {
-      font-size: 33px;
-      font-weight: normal;
-   }
 }
 
-@mixin theme() {
-   background: #000;
-   color: black;
-}
 
-.title {
-   @include theme;
-   margin-top: 20px;
-}
-
-@import "./componets/header"
 
