@@ -79,15 +79,15 @@ body {
   }
 }
 .benefits__title.middle-title,
-      .middle-title {
-        font-family: Philosopher;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 24px;
-        color: #150C01;
-        margin-bottom: 15px;
-      }
+  .middle-title {
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 24px;
+    color: #150C01;
+    margin-bottom: 15px;
+  }
 
 // HEADER ..........................
 .header {
@@ -239,6 +239,144 @@ body {
     }
   }
 }
+.menupos {
+  .menupos__description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #150C01;
+    opacity: 0.7;
+    width: 748px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .menupos__iner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     .menupos__item {
+       margin-bottom: 20px;
+       width: 33.333333%;
+       border-right: 1px solid rgba(0, 0, 0, 0.1);
+       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+       .menupos__img-box {
+         background-image: url(../imgs/food-1.jpg);
+         background-position: center top;
+         background-size: cover;
+         width: 100%;
+         height: 306px;
+        //  margin-bottom: 21px;
+         border-radius: 80px 10px 80px 0px;
+         -webkit-border-radius: 80px 10px 80px 0px;
+         -moz-border-radius: 80px 10px 80px 0px;
+         -ms-border-radius: 80px 10px 80px 0px;
+         -o-border-radius: 80px 10px 80px 0px;
+         }
+         .menupos__info {
+           padding: 21px 25px 25px 25px;
+           border-left: 1px solid rgba(0, 0, 0, 0.1);
+          .menupos__title-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .middle-title.menupos-title {
+              margin: 0;
+            }
+            .menupos-span {
+              margin: 0;
+            }
+          }
+          p.menupos__text {
+           line-height: 24px;
+           opacity: 0.7;
+           margin: 0px;
+           width: 310px;
+           margin-right: 10px;
+          }
+          .rating__box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            .reting__box-add {
+              width: 36px;
+              height: 34px;
+              background: #DC780B;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .add-line {
+                width: 12px;
+                height: 2px;
+                background-color: #fff;
+                position: relative;
+              }
+              .add-column {
+                width: 2px;
+                height: 12px;
+                background-color: #fff;
+                position: absolute;
+              }
+            }
+            .reting__box-stars {
+              display: flex;
+              .rating {
+                display: flex;
+
+                &__star {
+                  height: 16px;
+                  width: 16px;
+                  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23EDEDED'/%3E%3C/svg%3E%0A");
+                }
+              }
+
+              [data-rating="1"] .rating__star:nth-child(1) {
+                background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23DC780B'/%3E%3C/svg%3E%0A");
+              }
+
+              [data-rating="2"] .rating__star {
+               &:nth-child(1),
+               &:nth-child(2){
+                  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23DC780B'/%3E%3C/svg%3E%0A");
+                }
+              }
+
+              [data-rating="3"] .rating__star {
+               &:nth-child(1),
+               &:nth-child(2),
+               &:nth-child(3){
+                  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23DC780B'/%3E%3C/svg%3E%0A");
+                }
+              }
+
+              [data-rating="4"] .rating__star {
+               &:nth-child(1),
+               &:nth-child(2),
+               &:nth-child(3),
+               &:nth-child(4){
+                  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23DC780B'/%3E%3C/svg%3E%0A");
+                }
+              }
+
+              [data-rating="5"] .rating__star {
+                  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23DC780B'/%3E%3C/svg%3E%0A");
+              }
+            }
+
+
+          }
+
+         }
+
+
+       }
+     }
+  }
+
+
+
 
  //  FOOTER ...................
 .footer {
