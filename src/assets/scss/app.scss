@@ -56,6 +56,39 @@ body {
   border-radius: 5px;
 }
 
+.title__box {
+  text-align: center;
+  .span__bg {
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #DC780B;
+    opacity: 0.7;
+  }
+  .title__bg {
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.25px;
+    line-height: 35px;
+    color: #150C01;
+    margin: 7px 0 25px ;
+  }
+  .title__bg:nth-child(2){
+    margin-top: 9px;
+  }
+}
+.benefits__title.middle-title,
+      .middle-title {
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 24px;
+        color: #150C01;
+        margin-bottom: 15px;
+      }
+
 // HEADER ..........................
 .header {
   padding-top: 30px;
@@ -105,7 +138,7 @@ body {
   }
 }
 
-// MAIN......
+// MAIN.........
 //- Section description..........
 .description {
   .description__iner {
@@ -167,25 +200,6 @@ body {
 .passion {
   margin-top: 69px;
   margin-bottom: 160px;
-  .title__box {
-    text-align: center;
-    .span__bg {
-      font-weight: 500;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #DC780B;
-      opacity: 0.7;
-    }
-    .title__bg {
-      font-family: Philosopher;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 31.25px;
-      line-height: 35px;
-      color: #150C01;
-      margin: 7px 0 25px ;
-    }
-  }
   .benefits {
     display: flex;
     align-items: center;
@@ -216,15 +230,6 @@ body {
         background: rgba(220, 120, 11, 0.1)
         ;
       }
-      .benefits__title {
-        font-family: Philosopher;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 24px;
-        color: #150C01;
-        margin-bottom: 15px;
-      }
       .benefits__text {
        line-height: 24px;
        opacity: 0.7;
@@ -235,14 +240,7 @@ body {
   }
 }
 
-//- Section product..........
-.product
-  .container
-
-
-
-
-//  FOOTER ...................
+ //  FOOTER ...................
 .footer {
   padding-top: 137px;
   padding-bottom: 84px;
