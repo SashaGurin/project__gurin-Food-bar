@@ -1,1 +1,50 @@
 
+// HEADER ..........................
+.header {
+    padding-top: 30px;
+
+    &__iner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-left {
+        display: flex;
+        align-items: center;
+
+        .header__logo {
+          margin-right: 35px;
+        }
+
+        .menu-list {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+
+          .menu-item {
+            margin-right: 41px;
+
+            .menu-link {
+              text-decoration: none;
+              line-height: 19px;
+              color: #150c01;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      &-right {
+        .header__btn,
+        .btn {
+          line-height: 19px;
+          color: #ffffff;
+          padding: 13px 30px;
+          background: #dc780b;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }

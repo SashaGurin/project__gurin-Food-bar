@@ -25,14 +25,12 @@
 //    margin-top: 20px;
 // }
 
-// @import "./componets/header"
+// @import "./componets/header";
 
 // сайт ниже
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
+@import "./componets/reset";
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -57,92 +55,10 @@ body {
   cursor: pointer;
 }
 
-.title__box {
-  text-align: center;
-  .span__bg {
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #dc780b;
-    opacity: 0.7;
-  }
-  .title__bg {
-    font-family: Philosopher;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 31.25px;
-    line-height: 35px;
-    color: #150c01;
-    margin: 7px 0 25px;
-  }
-  .title__bg:nth-child(2) {
-    margin-top: 9px;
-  }
-}
-.benefits__title.middle-title,
-.middle-title {
-  font-family: Philosopher;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 24px;
-  color: #150c01;
-  margin-bottom: 15px;
-}
-
-// HEADER ..........................
-.header {
-  padding-top: 30px;
-
-  &__iner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &-left {
-      display: flex;
-      align-items: center;
-
-      .header__logo {
-        margin-right: 35px;
-      }
-
-      .menu-list {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-
-        .menu-item {
-          margin-right: 41px;
-
-          .menu-link {
-            text-decoration: none;
-            line-height: 19px;
-            color: #150c01;
-            opacity: 0.6;
-          }
-        }
-      }
-    }
-    &-right {
-      .header__btn,
-      .btn {
-        line-height: 19px;
-        color: #ffffff;
-        padding: 13px 30px;
-        background: #dc780b;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    }
-  }
-}
+@import "./componets/header";
 
 // MAIN.........
 //- Section description..........
-
 .description {
   .description__iner {
     display: flex;
@@ -210,7 +126,6 @@ body {
     padding-top: 19px;
     &__item {
       margin: 0 10px;
-      // width: 33.333333%;
       text-align: center;
       .benefits__img-box {
         display: flex;
@@ -242,6 +157,40 @@ body {
     }
   }
 }
+.benefits__title.middle-title,
+.middle-title {
+  font-family: Philosopher;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 24px;
+  color: #150c01;
+  margin-bottom: 15px;
+}
+.title__box {
+  text-align: center;
+  .span__bg {
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #dc780b;
+    opacity: 0.7;
+  }
+  .title__bg {
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.25px;
+    line-height: 35px;
+    color: #150c01;
+    margin: 7px 0 25px;
+  }
+  .title__bg:nth-child(2) {
+    margin-top: 9px;
+  }
+}
+
+// Section menupos
 .menupos {
   .menupos__description {
     text-align: center;
@@ -269,8 +218,6 @@ body {
     .menupos__item {
       margin-bottom: 20px;
       max-width: 360px;
-      // border-radius: 75px 10px 10px 10px;
-      // overflow: hidden;
       .menupos__img-box {
         background-image: url(../imgs/food-1.jpg);
         background-position: center top;
@@ -284,7 +231,7 @@ body {
         -moz-border-radius: 75px 10px 0px 0px;
         -ms-border-radius: 75px 10px 0px 0px;
         -o-border-radius: 75px 10px 0px 0px;
-}
+      }
       .menupos__info {
         border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 21px 25px 25px 25px;
@@ -406,102 +353,4 @@ body {
   }
 }
 
-//  FOOTER ...................
-.footer {
-  padding-top: 137px;
-  padding-bottom: 84px;
-  background: #252525;
-
-  a.footer-menu__list-link,
-  a.footer__logo-link {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
-    opacity: 0.7;
-  }
-  h4.footer-menu__title {
-    font-family: "Philosopher", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    color: #ffffff;
-    margin: 0;
-    margin-bottom: 26px;
-  }
-
-  &__iner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .footer__contacts {
-      width: 262px;
-      display: flex;
-      flex-direction: column;
-      .footer__logo {
-        margin-bottom: 25px;
-      }
-      .footer__logo-link {
-        margin-bottom: 17px;
-      }
-    }
-    .footer-menu {
-      width: 262px;
-      .footer-menu__list {
-        padding: 0;
-        margin: 0;
-        .footer-menu__list-item {
-          list-style-type: none;
-          margin-bottom: 20px;
-        }
-        .footer__social {
-          padding-top: 5px;
-          display: flex;
-          // align-items: center;
-          .footer__social-item {
-            // align-items: center;
-            // justify-content: center;
-            margin-right: 10px;
-            position: relative;
-            width: 21px;
-            height: 21px;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            background: #6c27b3;
-            .footer__social-link {
-              width: 100%;
-              height: 100%;
-              .footer__social-img {
-                position: absolute;
-                top: 58%;
-                left: 60%;
-                transform: translate(-50%, -50%);
-                -webkit-transform: translate(-50%, -50%);
-                -moz-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                -o-transform: translate(-50%, -50%);
-              }
-              .footer__social-img.twitter-img {
-                top: 50%;
-                left: 50%;
-              }
-            }
-          }
-          .footer__social-item:nth-child(2) {
-            background: #4a7aff;
-          }
-          .footer__social-item:nth-child(3) {
-            background: #55acee;
-          }
-          .footer__social-item:nth-child(4) {
-            background: #d22215;
-          }
-        }
-      }
-    }
-  }
-}
+@import "./componets/footer"
