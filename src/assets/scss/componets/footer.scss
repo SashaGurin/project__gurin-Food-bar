@@ -1,4 +1,4 @@
-@import "./vars";
+@import "../main/vars";
 //  FOOTER ...................
 .footer {
     padding-top: 137px;
@@ -21,7 +21,7 @@
 
     }
     h4.footer-menu__title {
-      font-family: "Philosopher", sans-serif;
+      font-family: $secondary-font;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
