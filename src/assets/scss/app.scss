@@ -35,7 +35,7 @@
 
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $primery-font;
   font-size: 16px;
   font-weight: 400;
   color: $primerycolor-black;
@@ -70,7 +70,7 @@ body {
       padding-top: 160px;
       width: 555px;
       .description-title {
-        font-family: Philosopher;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 48.83px;
@@ -163,7 +163,7 @@ body {
 }
 .benefits__title.middle-title,
 .middle-title {
-  font-family: Philosopher;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -181,7 +181,7 @@ body {
     opacity: 0.7;
   }
   .title__bg {
-    font-family: Philosopher;
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: bold;
     font-size: 31.25px;
