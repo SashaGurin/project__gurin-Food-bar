@@ -1,19 +1,3 @@
-// $primarycolor: #dc780b;
-// html {
-//   color: $primarycolor;
-// }
-
-// .item {
-//    color: red;
-//    &__img {
-//       width: 100px;
-//       height: 100px;
-//    }
-//    &__title {
-//       font-size: 33px;
-//       font-weight: normal;
-//    }
-// }
 
 // @mixin theme() {
 //    background: #000;
@@ -24,8 +8,6 @@
 //    @include theme;
 //    margin-top: 20px;
 // }
-
-
 
 // основные стили
 @import "./main/reset.scss";
