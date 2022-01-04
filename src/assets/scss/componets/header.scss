@@ -1,4 +1,4 @@
-
+@import "./vars";
 // HEADER ..........................
 .header {
     padding-top: 30px;
@@ -25,12 +25,16 @@
 
           .menu-item {
             margin-right: 41px;
-
             .menu-link {
               text-decoration: none;
               line-height: 19px;
-              color: #150c01;
+              color: $primerycolor-black;
               opacity: 0.6;
+              transition: all 0.3s;
+               &:hover {
+                color:$primerycolor-orange;
+                opacity: 0.8;
+               }
             }
           }
         }
@@ -41,7 +45,7 @@
           line-height: 19px;
           color: #ffffff;
           padding: 13px 30px;
-          background: #dc780b;
+          background: $primerycolor-orange;
           border-radius: 5px;
           cursor: pointer;
         }

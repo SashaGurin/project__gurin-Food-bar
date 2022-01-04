@@ -30,13 +30,16 @@
 // сайт ниже
 
 @import "./componets/reset";
+@import "./componets/vars";
+
+
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #150c01;
-  background-color: #fff;
+  color: $primerycolor-black;
+  background-color: $primerycolor-white;
 }
 
 .container {
@@ -48,9 +51,9 @@ body {
 
 .btn {
   line-height: 19px;
-  color: #ffffff;
+  color: $primerycolor-white;
   padding: 13px 30px;
-  background: #dc780b;
+  background: $primerycolor-orange;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -72,13 +75,13 @@ body {
         font-weight: bold;
         font-size: 48.83px;
         line-height: 58px;
-        color: #150c01;
+        color: $primerycolor-black;
         margin: 0;
         margin-bottom: 42px;
       }
       .description-subtitle {
         line-height: 24px;
-        color: #150c01;
+        color: $primerycolor-black;
         opacity: 0.7;
         margin: 0;
         margin-bottom: 50px;
@@ -88,8 +91,8 @@ body {
         .description__btn-left {
           padding: 21px 41px;
           margin-right: 10px;
-          background: #dc780b;
-          color: #fff;
+          background: $primerycolor-orange;
+          color: $primerycolor-white;
           border-radius: 5px;
           font-weight: 500;
           cursor: pointer;
@@ -106,12 +109,12 @@ body {
 }
 .description__btn-right {
   padding: 21px 40px;
-  background: #fff;
+  background: $primerycolor-white;
   font-weight: 500;
   display: inline-block;
   border: 1.5px solid rgba(220, 120, 11, 0.2);
   border-radius: 5px;
-  color: #dc780b;
+  color: $primerycolor-orange;
   cursor: pointer;
 }
 
@@ -124,6 +127,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 19px;
+    margin: 0 20px;
     &__item {
       margin: 0 10px;
       text-align: center;
@@ -164,7 +168,7 @@ body {
   font-weight: bold;
   font-size: 25px;
   line-height: 24px;
-  color: #150c01;
+  color: $primerycolor-black;
   margin-bottom: 15px;
 }
 .title__box {
@@ -173,7 +177,7 @@ body {
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #dc780b;
+    color: $primerycolor-orange;
     opacity: 0.7;
   }
   .title__bg {
@@ -182,7 +186,7 @@ body {
     font-weight: bold;
     font-size: 31.25px;
     line-height: 35px;
-    color: #150c01;
+    color: $primerycolor-black;
     margin: 7px 0 25px;
   }
   .title__bg:nth-child(2) {
@@ -196,7 +200,7 @@ body {
     text-align: center;
     font-size: 16px;
     line-height: 24px;
-    color: #150c01;
+    color: $primerycolor-black;
     opacity: 0.7;
     max-width: 748px;
     margin: 0 auto;
@@ -268,7 +272,7 @@ body {
           .reting__box-add {
             width: 36px;
             height: 34px;
-            background: #dc780b;
+            background: $primerycolor-orange;
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -277,13 +281,13 @@ body {
             .add-line {
               width: 12px;
               height: 2px;
-              background-color: #fff;
+              background-color: $primerycolor-white;
               position: relative;
             }
             .add-column {
               width: 2px;
               height: 12px;
-              background-color: #fff;
+              background-color: $primerycolor-white;
               position: absolute;
             }
           }
