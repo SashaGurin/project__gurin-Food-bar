@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media (max-width:768px) {
+    @media (max-width:788px) {
       display: block;
      }
     .menupos__item {
@@ -32,7 +32,7 @@
       height: 100%;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
       border-bottom-right-radius: 10px;
-      @media (max-width:768px) {
+      @media (max-width:788px) {
         margin:0 auto ;
         margin-bottom: 50px;
        }

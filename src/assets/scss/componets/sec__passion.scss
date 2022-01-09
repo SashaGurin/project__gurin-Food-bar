@@ -1,15 +1,26 @@
 .passion {
   margin-top: 69px;
   margin-bottom: 160px;
+  @media (max-width:788px) {
+    margin-bottom: 80px;
+    margin-top: 49px;
+   }
   .benefits {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 19px;
     margin: 0 20px;
+    @media (max-width:788px) {
+      display: block;
+      padding-top: 0px;
+     }
     &__item {
       margin: 0 10px;
       text-align: center;
+      @media (max-width:788px) {
+        margin-top: 30px;
+       }
       .benefits__img-box {
         display: flex;
         align-items: center;
@@ -20,10 +31,10 @@
         margin-bottom: 33px;
         border-radius: 50%;
         background: rgba(143, 166, 50, 0.1);
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        @media (max-width:788px) {
+          margin-bottom: 15px;
+         }
+
       }
       .benefits__img-box.moto {
         background: rgba(230, 77, 46, 0.1);
