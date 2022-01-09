@@ -25,6 +25,9 @@
 
           .menu-item {
             margin-right: 41px;
+            @media (max-width:991px) {
+              margin-right: 31px;
+            }
             .menu-link {
               text-decoration: none;
               line-height: 19px;

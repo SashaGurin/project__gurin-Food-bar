@@ -2,6 +2,9 @@
   .description__iner {
     display: flex;
     justify-content: space-between;
+    @media (max-width:768px) {
+     display: block;
+    }
     .description__iner-left {
       padding-top: 160px;
       width: 555px;
