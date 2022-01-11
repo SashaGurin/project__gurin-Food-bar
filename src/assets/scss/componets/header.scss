@@ -69,10 +69,10 @@
               color: $primerycolor-black;
               opacity: 0.6;
               transition: all 0.3s;
-               &:hover {
-                color:$primerycolor-orange;
-                opacity: 0.8;
-               }
+              &:hover {
+              color:$primerycolor-orange;
+              opacity: 0.8;
+              }
             }
           }
         }
@@ -87,6 +87,10 @@
           background: $primerycolor-orange;
           border-radius: 5px;
           cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            background: $primery-orange_hover;
+          }
           @media (max-width:788px) {
             padding: 12px 20px;
           }
