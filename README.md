@@ -1,5 +1,1 @@
-# gulp-boilerplate
-## Запустить команду -npm ci
-## Чтобы запустить процесс
- -gulp
- upt
+https://sashagurin.github.io/project__gurin-Food-bar/build/
